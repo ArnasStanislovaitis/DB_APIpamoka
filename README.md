@@ -1,2 +1,2 @@
-# DB_APIpamoka
-entity framework pamoka
+# EF-PAMOKA
+BIT pamoka darbui su entity framework ir API
