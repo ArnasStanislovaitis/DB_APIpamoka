@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3MLPQJtW8Crk2DtemvxX7+FciUm/vMAhSGnjvZ/9OvLpme9SWWrj14mdTsTlOsMtspsOkZ7uYHHy5TvCKBNm0w==",
+  "dgSpecHash": "TVH/WOzZ4uh4q2AVGueVKsJDeh1YNfsEkcNHULmecmY0/4hcEMiA/iumgprw5wf/wCVTLa8TSl65gbBmk/h6Bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
+  "projectFilePath": "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arnas\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Arnas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace EF_PAMOKA.Migrations
 {
-    public partial class PirmaMigracija : Migration
+    public partial class fix3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -39,6 +39,21 @@ namespace EF_PAMOKA.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Mopedai",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Marke = table.Column<string>(type: "text", nullable: false),
+                    Modelis = table.Column<string>(type: "text", nullable: false),
+                    SavininkoId = table.Column<int>(type: "integer", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Mopedai", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Savininkai",
                 columns: table => new
                 {
@@ -49,6 +64,21 @@ namespace EF_PAMOKA.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Savininkai", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Vartotojai",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Vardas = table.Column<string>(type: "text", nullable: false),
+                    Slaptazodis = table.Column<string>(type: "text", nullable: false),
+                    Pastas = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Vartotojai", x => x.Id);
                 });
         }
 
@@ -61,7 +91,13 @@ namespace EF_PAMOKA.Migrations
                 name: "Daiktai");
 
             migrationBuilder.DropTable(
+                name: "Mopedai");
+
+            migrationBuilder.DropTable(
                 name: "Savininkai");
+
+            migrationBuilder.DropTable(
+                name: "Vartotojai");
         }
     }
 }

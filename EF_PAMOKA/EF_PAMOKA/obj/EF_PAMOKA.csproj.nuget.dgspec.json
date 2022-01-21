@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj": {}
+    "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj": {
+    "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
+        "projectUniqueName": "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
         "projectName": "EF_PAMOKA",
-        "projectPath": "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
+        "projectPath": "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\EF_PAMOKA.csproj",
         "packagesPath": "C:\\Users\\Arnas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arnas\\Documents\\GitHub\\EF-PAMOKA\\EF_PAMOKA\\EF_PAMOKA\\obj\\",
+        "outputPath": "C:\\Users\\Arnas\\Documents\\GitHub\\DB_APIpamoka\\EF_PAMOKA\\EF_PAMOKA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arnas\\AppData\\Roaming\\NuGet\\NuGet.Config",
