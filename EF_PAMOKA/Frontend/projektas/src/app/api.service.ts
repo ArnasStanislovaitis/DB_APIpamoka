@@ -38,4 +38,32 @@ export class ApiService {
 
   }
 
+  async registruotis(data:any){
+    data.Id=0
+    
+
+    let atsakymasIsServerio = await fetch('https://localhost:44321/register',{
+      method: 'POST',
+      headers : {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body:JSON.stringify(data)
+    })
+
+    let tokenas=await atsakymasIsServerio.json().catch(error=>console.log(error))
+
+    if(atsakymasIsServerio.status==401){
+      alert("User already exists")
+    }
+
+    if(tokenas!=null && atsakymasIsServerio.status==200){
+      console.log(tokenas)
+      this.router.navigate(['main'])
+
+    }
+
+  }
+
+
 }
