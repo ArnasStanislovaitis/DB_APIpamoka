@@ -7,9 +7,22 @@ import { Router } from '@angular/router';
 })
 export class ApiService {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router) { 
+    let browserToken =localStorage.getItem('token')
+    if(browserToken !=null){
+      this.loggedIn=true;
+      this.token=browserToken;
+    }
+  }
 
+  loggedIn=false;
   token =''
+
+atsijungti(){
+  this.loggedIn=false;
+  localStorage.removeItem('token');
+  this.router.navigate(["login"]);
+}
 
   async prisijungti(data:any){
     data.Id=0
@@ -31,7 +44,12 @@ export class ApiService {
     }
 
     if(tokenas!=null && atsakymasIsServerio.status==200){
-      console.log(tokenas)
+      console.log(tokenas)      
+      this.loggedIn=true;
+
+      this.token=tokenas;
+      localStorage.setItem('token',this.token)
+
       this.router.navigate(['main'])
 
     }
@@ -59,11 +77,17 @@ export class ApiService {
 
     if(tokenas!=null && atsakymasIsServerio.status==200){
       console.log(tokenas)
+      this.loggedIn=true;
+
+      this.token=tokenas;
+      localStorage.setItem('token',this.token)
+
       this.router.navigate(['main'])
 
     }
 
   }
+
 
 
 }
